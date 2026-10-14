@@ -1004,3 +1004,6 @@ img.logo-mark { background: none; display: block; object-fit: contain; }
 }
 .mv-panel-card h3 { color: #fff; margin-bottom: 6px; }
 .mv-panel-card p { margin: 0; color: #c3cde0; }
+
+.stat-title { grid-column: 1 / -1; margin: 0; color: #fff; font-size: 0.85rem; letter-spacing: 0.12em; text-transform: uppercase; }
+.stat-note { font-size: 0.85rem; color: #8fa0bb; }
