@@ -28,7 +28,7 @@ It is a static site: plain HTML, CSS and vanilla JavaScript, with **no build ste
 
 - **Shared header and footer** are repeated in each HTML file (no build step). If you change the nav or footer, update it in all four pages. Each block is marked with `HEADER (shared …)` / `FOOTER (shared …)` comments.
 - **Colours and fonts** live in the `:root` block at the top of `assets/css/style.css`.
-- Service sections use anchors so you can link straight to them: `services.html#devops`, `#software`, `#iac`, `#cloud`, `#devsecops`, `#training`, `#custom`.
+- Service sections use anchors so you can link straight to them: `services.html#devops`, `#docker`, `#iac`, `#cicd`, `#devsecops`, `#kubernetes`, `#dataops`, `#cloud`, `#custom`.
 - The contact form accepts `?service=<id>` to pre-select a service, e.g. `contact.html?service=cloud`.
 
 ## Contact details

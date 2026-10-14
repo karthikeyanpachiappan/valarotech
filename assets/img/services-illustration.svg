@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 720" role="img" aria-labelledby="t d">
+  <title id="t">Valarotech DevOps platform illustration</title>
+  <desc id="d">A cloud platform at the centre connected to containers, infrastructure code, CI/CD, security, Kubernetes, data pipelines and monitoring, above a delivery pipeline.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1b36"/>
+      <stop offset="1" stop-color="#071226"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1463ff"/>
+      <stop offset=".55" stop-color="#7b5cff"/>
+      <stop offset="1" stop-color="#14c8b4"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#1463ff" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#1463ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#14c8b4" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#14c8b4" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#ffffff" stroke-opacity=".05"/>
+    </pattern>
+    <g id="node">
+      <circle r="38" fill="#0f2547" stroke="url(#brand)" stroke-width="2"/>
+      <circle r="46" fill="none" stroke="#5b8cff" stroke-opacity=".25"/>
+    </g>
+  </defs>
+
+  <rect width="640" height="720" rx="28" fill="url(#bg)"/>
+  <rect width="640" height="720" rx="28" fill="url(#grid)"/>
+  <circle cx="320" cy="300" r="250" fill="url(#glow)"/>
+  <circle cx="520" cy="620" r="200" fill="url(#glow2)"/>
+
+  <!-- connection lines -->
+  <g stroke="#5b8cff" stroke-opacity=".55" stroke-width="2" stroke-dasharray="5 7" fill="none">
+    <path d="M320 300 L150 150"/><path d="M320 300 L490 150"/>
+    <path d="M320 300 L100 320"/><path d="M320 300 L540 320"/>
+    <path d="M320 300 L170 470"/><path d="M320 300 L470 470"/>
+    <path d="M320 300 L320 110"/>
+  </g>
+
+  <!-- central cloud -->
+  <g transform="translate(320 300)">
+    <circle r="96" fill="#1463ff" fill-opacity=".12"/>
+    <path d="M-62 30 a34 34 0 0 1 4-67 a46 46 0 0 1 88-10 a36 36 0 0 1 40 44 a30 30 0 0 1-6 33 z" fill="url(#brand)"/>
+    <path d="M-62 30 a34 34 0 0 1 4-67 a46 46 0 0 1 88-10 a36 36 0 0 1 40 44 a30 30 0 0 1-6 33 z" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="2"/>
+    <!-- V mark inside cloud -->
+    <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" transform="translate(-16 -30) scale(.62)">
+      <circle cx="16.5" cy="20" r="4.2" stroke-width="3.6"/>
+      <path d="M19 24.5 L30.5 46 L43.5 13" stroke-width="6"/>
+    </g>
+  </g>
+
+  <!-- satellites -->
+  <!-- top: CI/CD loop -->
+  <g transform="translate(320 110)">
+    <use href="#node"/>
+    <g fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M0 0 C-5 -10 -20 -10 -20 0 S-5 10 0 0 S20 -10 20 0 S5 10 0 0 Z"/><path d="M11 -9 l4 2 l-3 4"/>
+    </g>
+  </g>
+  <!-- container -->
+  <g transform="translate(150 150)">
+    <use href="#node"/>
+    <g fill="none" stroke="#fff" stroke-width="2.6" stroke-linejoin="round">
+      <path d="M-16 -6 L0 -14 L16 -6 L16 12 L0 20 L-16 12 Z"/><path d="M-16 -6 L0 2 L16 -6 M0 2 V20"/>
+    </g>
+  </g>
+  <!-- IaC: code file -->
+  <g transform="translate(490 150)">
+    <use href="#node"/>
+    <g fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M-13 -19 h17 l9 9 v29 h-26 z"/><path d="M4 -19 v9 h9"/>
+      <path d="M-4 0 l-5 5 l5 5 M4 0 l5 5 l-5 5"/>
+    </g>
+  </g>
+  <!-- security shield -->
+  <g transform="translate(100 320)">
+    <use href="#node"/>
+    <g fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M0 -18 L15 -12 V0 c0 10-7 16-15 20 c-8-4-15-10-15-20 V-12 Z"/><path d="M-6 0 l4 4 l8-8"/>
+    </g>
+  </g>
+  <!-- kubernetes wheel -->
+  <g transform="translate(540 320)">
+    <use href="#node"/>
+    <g fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round">
+      <circle r="15"/><circle r="4" fill="#fff"/>
+      <path d="M0 -4 V-15 M3.8 -1.2 L14.3 -4.6 M2.4 3.2 L8.8 12.1 M-2.4 3.2 L-8.8 12.1 M-3.8 -1.2 L-14.3 -4.6"/>
+    </g>
+  </g>
+  <!-- data pipeline cylinder -->
+  <g transform="translate(170 470)">
+    <use href="#node"/>
+    <g fill="none" stroke="#fff" stroke-width="2.6">
+      <ellipse cx="0" cy="-12" rx="14" ry="5"/><path d="M-14 -12 V12 c0 7 28 7 28 0 V-12"/><path d="M-14 0 c0 7 28 7 28 0"/>
+    </g>
+  </g>
+  <!-- monitoring chart -->
+  <g transform="translate(470 470)">
+    <use href="#node"/>
+    <g fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M-16 14 H16"/><path d="M-13 6 L-4 -3 L3 4 L13 -10"/><circle cx="13" cy="-10" r="2.4" fill="#fff"/>
+    </g>
+  </g>
+
+  <!-- delivery pipeline -->
+  <g transform="translate(60 580)">
+    <rect width="520" height="92" rx="18" fill="#0f2547" stroke="#ffffff" stroke-opacity=".1"/>
+    <g font-family="'Plus Jakarta Sans', 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" fill="#c3cde0" text-anchor="middle">
+      <path d="M70 34 H450" stroke="url(#brand)" stroke-width="4" stroke-linecap="round"/>
+      <g fill="#14c8b4"><circle cx="70" cy="34" r="11"/><circle cx="165" cy="34" r="11"/><circle cx="260" cy="34" r="11"/><circle cx="355" cy="34" r="11"/></g>
+      <circle cx="450" cy="34" r="11" fill="#1463ff"/>
+      <g fill="none" stroke="#071226" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M65 34 l4 4 l7-8"/><path d="M160 34 l4 4 l7-8"/><path d="M255 34 l4 4 l7-8"/><path d="M350 34 l4 4 l7-8"/>
+      </g>
+      <path d="M447 29 l7 5 l-7 5 z" fill="#fff"/>
+      <text x="70" y="72">Build</text><text x="165" y="72">Test</text><text x="260" y="72">Scan</text><text x="355" y="72">Provision</text><text x="450" y="72" fill="#fff">Deploy</text>
+    </g>
+  </g>
+</svg>

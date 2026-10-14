@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Services | DevOps, Cloud, IaC, DevSecOps &amp; Training | Valarotech</title>
-  <meta name="description" content="Valarotech services: end-to-end DevOps (consulting, implementation, managed), software development, infrastructure as code, cloud migration and cost optimisation, DevSecOps, and DevOps training.">
+  <title>IT Services | DevOps, Cloud, Kubernetes &amp; DataOps | Valarotech</title>
+  <meta name="description" content="Valarotech IT services: DevOps consulting, Docker and containerization, Terraform and infrastructure as code, CI/CD, DevSecOps, Kubernetes and workflow orchestration, data pipeline engineering (DataOps), and enterprise cloud support on AWS, Azure and GCP.">
   <meta property="og:title" content="Valarotech Services">
-  <meta property="og:description" content="DevOps, cloud, infrastructure automation, DevSecOps, software development and DevOps training.">
+  <meta property="og:description" content="DevOps consulting, containers, IaC, CI/CD, DevSecOps, Kubernetes, DataOps and enterprise cloud support on AWS, Azure and GCP.">
   <meta property="og:type" content="website">
   <link rel="canonical" href="https://valarotech.com/services.html">
   <meta property="og:url" content="https://valarotech.com/services.html">
@@ -50,195 +50,111 @@
   </header>
 
   <main id="main">
-    <section class="page-hero">
+    <section class="page-hero page-hero-center">
       <div class="container">
         <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a> / Services</nav>
-        <span class="eyebrow">Services</span>
-        <h1>Everything you need to build, ship and run software well</h1>
-        <p>Pick a single service or combine them into an end-to-end engagement. Either way, you get senior engineers focused on measurable outcomes.</p>
+        <h1>IT Services</h1>
+        <p>Hands-on DevOps and cloud engineering for the whole delivery lifecycle: containers, infrastructure as code, CI/CD, DevSecOps, Kubernetes, data pipelines and enterprise cloud support on AWS, Azure and Google Cloud.</p>
       </div>
     </section>
 
-    <nav class="service-nav" aria-label="Services on this page">
+    <section class="section section-dark panel-section">
       <div class="container">
-        <ul>
-          <li><a href="#devops">DevOps services</a></li>
-          <li><a href="#software">Software development</a></li>
-          <li><a href="#iac">Infrastructure automation</a></li>
-          <li><a href="#cloud">Cloud</a></li>
-          <li><a href="#devsecops">DevSecOps</a></li>
-          <li><a href="#training">Coaching &amp; training</a></li>
-          <li><a href="#custom">Custom services</a></li>
-        </ul>
-      </div>
-    </nav>
+        <div class="panel">
+          <div class="panel-media">
+            <img src="assets/img/services-illustration.svg" alt="Illustration of a cloud platform connected to containers, infrastructure code, CI/CD, security, Kubernetes, data pipelines and monitoring" width="640" height="720">
+          </div>
+          <div class="panel-cards">
 
-    <!-- ============ DEVOPS ============ -->
-    <section class="section service-detail" id="devops">
+            <article class="svc-card reveal" id="devops">
+              <h2>DevOps Consulting</h2>
+              <p>An honest look at how your team builds, tests and ships today, followed by a practical roadmap: the right tools, branching and release strategy, and the delivery metrics that prove it is working.</p>
+              <div class="svc-tags"><span>Maturity assessment</span><span>Roadmaps</span><span>DORA metrics</span></div>
+            </article>
+
+            <article class="svc-card reveal" id="docker">
+              <h2>Docker / Containerization</h2>
+              <p>Your applications packaged into lean, secure container images that behave the same on a laptop, in CI and in production. No more "it works on my machine".</p>
+              <div class="svc-tags"><span>Docker</span><span>Multi-stage builds</span><span>Image scanning</span><span>Registries</span></div>
+            </article>
+
+            <article class="svc-card reveal" id="iac">
+              <h2>Terraform / Infrastructure as Code (IaC)</h2>
+              <p>Your cloud described in reviewed, versioned code. Reusable Terraform modules and Ansible playbooks turn new environments into a pull request instead of a week of tickets.</p>
+              <div class="svc-tags"><span>Terraform</span><span>Ansible</span><span>CloudFormation</span><span>GitOps</span></div>
+            </article>
+
+            <article class="svc-card reveal" id="cicd">
+              <h2>CI/CD</h2>
+              <p>Pipelines that build, test, scan and deploy on every change, with approvals, release tagging and one-click rollback built in, on the platform your team already uses.</p>
+              <div class="svc-tags"><span>Jenkins</span><span>GitHub Actions</span><span>GitLab CI</span><span>Azure DevOps</span></div>
+            </article>
+
+            <article class="svc-card reveal" id="devsecops">
+              <h2>DevSecOps</h2>
+              <p>Security that runs automatically on every commit instead of as a last-minute gate: code and dependency scanning, secrets management, policy checks and the audit trail compliance teams ask for.</p>
+              <div class="svc-tags"><span>SonarQube</span><span>Trivy</span><span>HashiCorp Vault</span><span>Nexus IQ</span></div>
+            </article>
+
+            <article class="svc-card reveal" id="kubernetes">
+              <h2>Kubernetes / Workflow Orchestration</h2>
+              <p>Production-ready clusters on EKS, AKS, GKE or OKE with Helm, autoscaling and GitOps, plus workflow orchestration for the scheduled jobs and pipelines your business depends on.</p>
+              <div class="svc-tags"><span>Kubernetes</span><span>Helm</span><span>Argo CD</span><span>Apache Airflow</span></div>
+            </article>
+
+            <article class="svc-card reveal" id="dataops">
+              <h2>Data Pipeline Engineering / DataOps</h2>
+              <p>The same discipline for data that you expect for code: versioned database changes, tested Databricks and Airflow deployments, and promotions between environments you can trust.</p>
+              <div class="svc-tags"><span>Liquibase</span><span>Databricks</span><span>Airflow</span><span>Astronomer</span></div>
+            </article>
+
+            <article class="svc-card reveal" id="cloud">
+              <h2>Enterprise Cloud Support: AWS / Azure / GCP</h2>
+              <p>Architecture, migration, cost optimisation and day-to-day operational support across the major clouds, with monitoring and on-call options sized to your team.</p>
+              <div class="svc-tags"><span>AWS</span><span>Microsoft Azure</span><span>Google Cloud</span><span>FinOps</span><span>Monitoring</span></div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ENGAGEMENT MODELS ============ -->
+    <section class="section">
       <div class="container">
-        <div class="split">
-          <div class="reveal">
-            <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8a6 6 0 0 1 0 8M6 16a6 6 0 0 1 0-8"/><path d="M8 12h8"/><circle cx="12" cy="12" r="10"/></svg></div>
-            <span class="eyebrow">Core service</span>
-            <h2>DevOps services, end to end</h2>
-            <p class="lead">Whether you need advice, hands-on engineering or someone to run it all for you, we cover the full DevOps lifecycle from strategy to day-to-day operations.</p>
-            <ul class="feature-list">
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>CI/CD pipeline design, build and migration</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Containerisation and Kubernetes platform engineering</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Release strategies: blue/green, canary and feature flags</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Monitoring, logging, alerting and SRE practices</li>
-            </ul>
-          </div>
-          <div class="service-panel reveal">
-            <h3>Tools we use</h3>
-            <div class="tag-list">
-              <span class="tag">Jenkins</span><span class="tag">GitHub Actions</span><span class="tag">GitLab CI</span><span class="tag">Azure DevOps</span><span class="tag">Kubernetes</span><span class="tag">Docker</span><span class="tag">Helm</span><span class="tag">Argo CD</span><span class="tag">Prometheus</span><span class="tag">Grafana</span>
-            </div>
-          </div>
+        <div class="section-head center reveal">
+          <span class="eyebrow">How we engage</span>
+          <h2>Pick the level of help you need</h2>
+          <p>Every service is available in three ways, and you can move between them as your team grows.</p>
         </div>
         <div class="tiers">
           <div class="tier reveal">
             <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
             <h3>Consulting</h3>
-            <p>DevOps maturity assessment, toolchain review and a prioritised roadmap your team can act on.</p>
+            <p>Assessments, architecture reviews and roadmaps your team can act on.</p>
           </div>
           <div class="tier reveal">
             <div class="icon-box teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9z"/></svg></div>
             <h3>Implementation</h3>
-            <p>Our engineers build the pipelines, platforms and automation alongside your team.</p>
+            <p>Our engineers build the pipelines, platforms and automation alongside yours.</p>
           </div>
           <div class="tier reveal">
             <div class="icon-box violet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
-            <h3>Managed DevOps</h3>
-            <p>We operate, monitor and continuously improve your platform, with flexible support hours.</p>
+            <h3>Managed support</h3>
+            <p>We operate, monitor and keep improving your platform after go-live.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ============ SOFTWARE ============ -->
-    <section class="section section-soft service-detail" id="software">
-      <div class="container split reverse">
-        <div class="reveal">
-          <div class="icon-box teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg></div>
-          <h2>Software development</h2>
-          <p class="lead">Cloud-native applications built with delivery in mind: tested, containerised and ready for automated deployment from the very first sprint.</p>
-          <ul class="feature-list">
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Web applications and REST/GraphQL APIs</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Microservices and modernisation of legacy systems</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Internal developer tools, CLIs and automation scripts</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Automated testing and code-quality gates</li>
-          </ul>
-        </div>
-        <div class="service-panel reveal">
-          <h3>Technologies</h3>
-          <div class="tag-list">
-            <span class="tag">Python</span><span class="tag">Go</span><span class="tag">Node.js</span><span class="tag">Java</span><span class="tag">React</span><span class="tag">PostgreSQL</span><span class="tag">Redis</span><span class="tag">Serverless</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ IAC ============ -->
-    <section class="section service-detail" id="iac">
-      <div class="container split">
-        <div class="reveal">
-          <div class="icon-box violet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><path d="M14 17.5h7M17.5 14v7"/></svg></div>
-          <h2>Infrastructure automation (IaC)</h2>
-          <p class="lead">Replace click-ops and snowflake servers with infrastructure that is defined in code, peer-reviewed and reproducible across every environment.</p>
-          <ul class="feature-list">
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Terraform modules, state management and workspaces</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Configuration management with Ansible</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>GitOps workflows for clusters and applications</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Drift detection, policy-as-code and self-service environments</li>
-          </ul>
-        </div>
-        <div class="service-panel reveal">
-          <h3>Tools we use</h3>
-          <div class="tag-list">
-            <span class="tag">Terraform</span><span class="tag">OpenTofu</span><span class="tag">Ansible</span><span class="tag">Pulumi</span><span class="tag">CloudFormation</span><span class="tag">Bicep</span><span class="tag">Packer</span><span class="tag">Argo CD</span><span class="tag">Flux</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ CLOUD ============ -->
-    <section class="section section-soft service-detail" id="cloud">
-      <div class="container split reverse">
-        <div class="reveal">
-          <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.5 19a4.5 4.5 0 1 0-1.4-8.8A6 6 0 0 0 4.3 12 4 4 0 0 0 6 19z"/></svg></div>
-          <h2>Cloud services</h2>
-          <p class="lead">Move to the cloud, or get more out of the cloud you already have, with architectures that are secure, resilient and cost-aware.</p>
-          <ul class="feature-list">
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><strong>Migration:</strong> lift-and-shift, re-platforming and data migration with minimal downtime</span></li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><strong>Architecture:</strong> landing zones, networking, high availability and disaster recovery</span></li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><strong>Cost optimisation:</strong> rightsizing, reserved capacity, autoscaling and FinOps reporting</span></li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><strong>Multi-cloud and hybrid:</strong> consistent tooling across providers and on-premises</span></li>
-          </ul>
-        </div>
-        <div class="service-panel reveal">
-          <h3>Platforms</h3>
-          <div class="tag-list">
-            <span class="tag">AWS</span><span class="tag">Microsoft Azure</span><span class="tag">Google Cloud</span><span class="tag">EKS</span><span class="tag">AKS</span><span class="tag">GKE</span><span class="tag">Serverless</span><span class="tag">CloudWatch</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ DEVSECOPS ============ -->
-    <section class="section service-detail" id="devsecops">
-      <div class="container split">
-        <div class="reveal">
-          <div class="icon-box teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
-          <h2>DevSecOps</h2>
-          <p class="lead">Shift security left without slowing teams down. Every commit is checked automatically, and compliance evidence is collected as you go.</p>
-          <ul class="feature-list">
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>SAST, DAST, dependency and container image scanning in CI/CD</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Secrets management and least-privilege access</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Policy-as-code and infrastructure security checks</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Compliance support for frameworks such as ISO 27001, SOC 2 and CIS benchmarks</li>
-          </ul>
-        </div>
-        <div class="service-panel reveal">
-          <h3>Tools we use</h3>
-          <div class="tag-list">
-            <span class="tag">SonarQube</span><span class="tag">Trivy</span><span class="tag">Snyk</span><span class="tag">OWASP ZAP</span><span class="tag">HashiCorp Vault</span><span class="tag">Checkov</span><span class="tag">OPA</span><span class="tag">Falco</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ TRAINING ============ -->
-    <section class="section section-soft service-detail" id="training">
-      <div class="container split reverse">
-        <div class="reveal">
-          <div class="icon-box violet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg></div>
-          <h2>DevOps coaching &amp; training</h2>
-          <p class="lead">Build lasting in-house capability. Our practitioners teach from real project experience, with labs that mirror your own environment.</p>
-          <ul class="feature-list">
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Instructor-led workshops for teams, online or on-site</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Hands-on tracks: Docker, Kubernetes, Terraform, CI/CD and cloud</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Embedded coaching and pairing during live projects</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Certification preparation for cloud and Kubernetes exams</li>
-          </ul>
-        </div>
-        <div class="service-panel reveal">
-          <h3>Popular topics</h3>
-          <div class="tag-list">
-            <span class="tag">DevOps fundamentals</span><span class="tag">Kubernetes (CKA/CKAD)</span><span class="tag">Terraform</span><span class="tag">AWS / Azure / GCP</span><span class="tag">GitOps</span><span class="tag">SRE practices</span><span class="tag">DevSecOps</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ CUSTOM ============ -->
+    <!-- ============ CUSTOM / CTA ============ -->
     <section class="section service-detail" id="custom">
       <div class="container">
         <div class="cta-banner reveal">
           <h2>Need something else?</h2>
-          <p>We also take on custom engagements, such as platform audits, incident response help, observability roll-outs, migration rescues and other bespoke IT services. If it involves building, shipping or running software, let's talk.</p>
+          <p>We also run hands-on DevOps coaching and training for engineering teams, and take on custom work such as platform audits, migration rescues and observability roll-outs. If it involves building, shipping or running software, let's talk.</p>
           <div class="hero-actions">
-            <a href="contact.html?service=other" class="btn btn-white">Discuss a custom project
+            <a href="contact.html" class="btn btn-white">Get a free consultation
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
             </a>
             <a href="about.html" class="btn btn-outline">Why Valarotech</a>
@@ -274,11 +190,13 @@
         <div>
           <h4>Services</h4>
           <ul>
-            <li><a href="services.html#devops">DevOps services</a></li>
-            <li><a href="services.html#cloud">Cloud</a></li>
-            <li><a href="services.html#iac">Infrastructure automation</a></li>
+            <li><a href="services.html#devops">DevOps consulting</a></li>
+            <li><a href="services.html#cicd">CI/CD</a></li>
+            <li><a href="services.html#iac">Terraform / IaC</a></li>
+            <li><a href="services.html#kubernetes">Kubernetes &amp; containers</a></li>
             <li><a href="services.html#devsecops">DevSecOps</a></li>
-            <li><a href="services.html#training">Coaching &amp; training</a></li>
+            <li><a href="services.html#dataops">DataOps</a></li>
+            <li><a href="services.html#cloud">Cloud support</a></li>
           </ul>
         </div>
         <div>
