@@ -33,7 +33,7 @@ It is a static site: plain HTML, CSS and vanilla JavaScript, with **no build ste
 
 ## Contact details
 
-Already set in `contact.html` and in the footer of every page: email `karthikeyanp@valarotech.com`, phone `+91 79049 31067`, location Salem, Tamil Nadu, India. If they change, update all four pages.
+Already set in `contact.html` and in the footer of every page: email `hello@valarotech.com` (an alias that delivers to the karthikeyanp@valarotech.com mailbox), phone `+91 79049 31067`, location Salem, Tamil Nadu, India. If they change, update all four pages.
 
 ## Placeholders to fill in
 

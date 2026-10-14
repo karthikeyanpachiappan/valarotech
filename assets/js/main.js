@@ -187,7 +187,7 @@
         })
         .catch(function () {
           status.className = "form-status error";
-          status.textContent = "Sorry, your message could not be sent. Please email us at karthikeyanp@valarotech.com.";
+          status.textContent = "Sorry, your message could not be sent. Please email us at hello@valarotech.com.";
         })
         .then(function () { button.disabled = false; });
     });
