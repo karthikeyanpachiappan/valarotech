@@ -16,7 +16,8 @@ It is a static site: plain HTML, CSS and vanilla JavaScript, with **no build ste
 ├── assets/
 │   ├── css/style.css   All styles (mobile-first, CSS variables at the top for colours/fonts)
 │   ├── js/main.js      Mobile menu, scroll effects, counters, contact form validation
-│   └── img/favicon.svg Logo mark / favicon
+│   ├── img/favicon.svg Browser-tab icon (same as the logo mark)
+│   └── brand/          Logo files: mark (SVG), horizontal logos, profile picture, social banners
 ├── .nojekyll           Tells GitHub Pages to serve files as-is
 └── README.md
 ```
@@ -42,7 +43,6 @@ Search the HTML for `PLACEHOLDER` to find each spot.
 | Company story | `about.html`, "Our story" section | Generic founding story. Adjust to Valarotech's real history (founding year, founders, location). |
 | Testimonials | `index.html`, "Our promise" section | Shows commitment cards for now. A testimonial card template is commented out in the HTML for when you have real client quotes. |
 | Team names | Not on the site yet | Add a team section to `about.html` if you want one. |
-| Logo | Header/footer (`.logo-mark` "V") and `assets/img/favicon.svg` | Simple gradient "V" mark. Swap for your real logo. |
 
 ## Contact form
 

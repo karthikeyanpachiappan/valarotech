@@ -920,3 +920,6 @@ p { margin: 0 0 1em; }
 .mt-lg { margin-top: 48px; }
 body.nav-open { overflow: hidden; }
 @media (min-width: 900px) { body.nav-open { overflow: auto; } }
+
+/* Logo image (replaces the text "V" mark) */
+img.logo-mark { background: none; display: block; object-fit: contain; }
