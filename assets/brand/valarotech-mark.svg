@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="512" height="512">
+  <title>Valarotech</title>
+  <defs>
+    <linearGradient id="vt-bg" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="64" y2="64">
+      <stop offset="0" stop-color="#1463ff"/>
+      <stop offset="0.55" stop-color="#7b5cff"/>
+      <stop offset="1" stop-color="#14c8b4"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#vt-bg)"/>
+  <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round">
+    <!-- commit node -->
+    <circle cx="16.5" cy="20" r="4.2" stroke-width="3.6"/>
+    <!-- pipeline V: rises higher on the right (growth) -->
+    <path d="M19 24.5 L30.5 46 L43.5 13" stroke-width="6"/>
+  </g>
+  <!-- leaf sprouting from the rising arm -->
+  <path d="M38.6 27.2 C43 20.2 49.2 18 55 19.4 C52 25.4 45.4 28.6 38.6 27.2 Z" fill="#fff"/>
+  <path d="M43.6 25 L52 21.2" stroke="url(#vt-bg)" stroke-width="1.4" stroke-linecap="round"/>
+</svg>
