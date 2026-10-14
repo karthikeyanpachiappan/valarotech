@@ -25,16 +25,17 @@ It is a static site: plain HTML, CSS and vanilla JavaScript, with **no build ste
 - Service sections use anchors so you can link straight to them: `services.html#devops`, `#software`, `#iac`, `#cloud`, `#devsecops`, `#training`, `#custom`.
 - The contact form accepts `?service=<id>` to pre-select a service, e.g. `contact.html?service=cloud`.
 
+## Contact details
+
+Already set in `contact.html` and in the footer of every page: email `karthikeyanp@valarotech.com`, phone `+91 79049 31067`, location Salem, Tamil Nadu, India. If they change, update all four pages.
+
 ## Placeholders to fill in
 
 Search the HTML for `PLACEHOLDER` to find each spot.
 
 | What | Where | Current placeholder |
 |---|---|---|
-| Email address | `contact.html` (contact details) and the footer of **all four pages** | `hello@valarotech.com` |
-| Phone number | `contact.html` and footer of all pages (both the visible text and the `tel:` link) | `+91 00000 00000` / `tel:+910000000000` |
-| Office address / location | `contact.html` and footer of all pages | `Street address, Your City, State, India` / `Your City, India` |
-| Business hours | `contact.html` | `Monday to Friday, 9:00 to 18:00 IST` |
+| Business hours | `contact.html` | `Monday to Friday, 9:00 to 18:00 IST`. Confirm or change. |
 | Social links (LinkedIn, GitHub, X) | Footer of all pages, `href="#"` | `#` |
 | Home page stats | `index.html`, "Why Valarotech" section | `50+` pipelines, `10x` faster releases, `40%` cost savings, `24/7` support. **Replace with real figures or remove them.** |
 | Company story | `about.html`, "Our story" section | Generic founding story. Adjust to Valarotech's real history (founding year, founders, location). |
