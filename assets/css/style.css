@@ -923,3 +923,17 @@ body.nav-open { overflow: hidden; }
 
 /* Logo image (replaces the text "V" mark) */
 img.logo-mark { background: none; display: block; object-fit: contain; }
+
+/* Legal pages */
+.legal { max-width: 780px; }
+.legal h2 { font-size: 1.3rem; margin-top: 2em; }
+.legal ul { padding-left: 1.2em; margin: 0 0 1em; }
+.legal li { margin-bottom: 0.4em; }
+
+/* 404 page */
+.not-found { min-height: 60vh; display: flex; align-items: center; }
+.not-found .hero-actions { margin-top: 32px; }
+
+/* Footer legal links */
+.footer-legal a { color: #9aa8bf; }
+.footer-legal a:hover { color: #fff; }

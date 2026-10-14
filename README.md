@@ -11,6 +11,10 @@ It is a static site: plain HTML, CSS and vanilla JavaScript, with **no build ste
 ├── index.html          Home: hero, services overview, why us, process, tech stack, CTA
 ├── about.html          Company story, mission & vision, values, approach
 ├── services.html       Detailed sections for every service (with in-page nav)
+├── privacy.html        Privacy Policy (DPDP Act 2023)
+├── terms.html          Terms of Use
+├── 404.html            Custom page-not-found page
+├── robots.txt, sitemap.xml  Search engine files (update sitemap when adding pages)
 ├── contact.html        Contact form (email via FormSubmit + Google Sheets) + contact details
 ├── google-apps-script/ Apps Script that saves enquiries to a Google Sheet
 ├── assets/
