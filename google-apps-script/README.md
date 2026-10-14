@@ -39,7 +39,7 @@ To make the email come **from** karthikeyanp@valarotech.com, add it as a Gmail a
 
 1. Gmail → **Settings (gear) → See all settings → Accounts and Import → Send mail as → Add another email address**.
 2. Name `Valarotech`, email `karthikeyanp@valarotech.com`, click **Next Step**.
-3. SMTP server `smtp.hostinger.com`, port `465`, username `karthikeyanp@valarotech.com`, your Hostinger email password, **Secured connection using SSL**.
+3. SMTP server `smtp.hostinger.com`, port `587`, username `karthikeyanp@valarotech.com`, your Hostinger email password, **Secured connection using TLS** (port 465 needs SSL instead).
 4. Enter the confirmation code Gmail sends to karthikeyanp@valarotech.com.
 
 The script detects the alias automatically; no code change is needed. The sheet's Auto-reply column then shows "sent from karthikeyanp@valarotech.com".
