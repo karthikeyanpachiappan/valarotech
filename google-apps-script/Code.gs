@@ -32,7 +32,7 @@ function doPost(e) {
       new Date(),
       clean(p.name),
       clean(p.email),
-      clean(p.phone),
+      asText(p.phone),
       clean(p.company),
       clean(p.service),
       clean(p.message),
@@ -118,6 +118,12 @@ function getSheet() {
 function clean(value) {
   var s = String(value || "").trim().slice(0, 5000);
   return /^[=+\-@]/.test(s) ? "'" + s : s;
+}
+
+// Keep phone numbers as text so leading 0s and "+" are not lost.
+function asText(value) {
+  var s = clean(value);
+  return s && s.charAt(0) !== "'" ? "'" + s : s;
 }
 
 function respond(obj) {
