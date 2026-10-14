@@ -150,16 +150,38 @@
         return;
       }
 
-      // TODO: When the form action points at a real endpoint (e.g. Formspree),
-      // remove this placeholder check so the browser submits normally, or send
-      // the data with fetch() as shown in the README.
-      if (form.getAttribute("action") === "#") {
-        e.preventDefault();
-        status.className = "form-status success";
-        status.textContent = "Thanks! Your message is ready to send. (The form is not connected to an email service yet.)";
-        form.reset();
-      }
+      // Send via FormSubmit's AJAX endpoint so the visitor stays on the page.
+      e.preventDefault();
+      var button = form.querySelector('button[type="submit"]');
+      var ajaxUrl = form.action.replace("formsubmit.co/", "formsubmit.co/ajax/");
+      button.disabled = true;
+      status.className = "form-status";
+      status.textContent = "";
+
+      fetch(ajaxUrl, {
+        method: "POST",
+        headers: { Accept: "application/json" },
+        body: new FormData(form)
+      })
+        .then(function (r) { return r.json().then(function (data) { return { ok: r.ok, data: data }; }); })
+        .then(function (res) {
+          if (!res.ok || String(res.data.success) === "false") throw new Error(res.data.message);
+          status.className = "form-status success";
+          status.textContent = "Thanks! Your message has been sent. We'll reply within one business day.";
+          form.reset();
+        })
+        .catch(function () {
+          status.className = "form-status error";
+          status.textContent = "Sorry, your message could not be sent. Please email us at karthikeyanp@valarotech.com.";
+        })
+        .then(function () { button.disabled = false; });
     });
+
+    // Confirmation after a non-JavaScript submission redirects back here
+    if (params.get("sent") === "1") {
+      status.className = "form-status success";
+      status.textContent = "Thanks! Your message has been sent. We'll reply within one business day.";
+    }
   }
 
   // Footer year

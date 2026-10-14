@@ -57,17 +57,16 @@
           <p>Fields marked <span style="color:#e5484d">*</span> are required.</p>
 
           <!--
-            TODO: Connect this form to a form-handling service.
-            The site is static (GitHub Pages), so it cannot send email by itself.
-            Easiest option, Formspree (https://formspree.io):
-              1. Create a free Formspree account and a new form; copy its endpoint,
-                 e.g. https://formspree.io/f/abcdwxyz
-              2. Replace action="#" below with that endpoint, keeping method="POST".
-              3. Done: assets/js/main.js only intercepts submission while action is "#".
-            Alternatives: Web3Forms, Getform, Basin, or a Netlify/Cloudflare function.
-            See README.md ("Wiring up the contact form") for details.
+            Submissions are delivered by FormSubmit (https://formsubmit.co) to the
+            address in the action URL. assets/js/main.js sends them via FormSubmit's
+            AJAX endpoint; without JavaScript the browser posts here directly.
+            To change the recipient, edit the email in the action URL below.
+            See README.md ("Contact form") for details.
           -->
-          <form id="contact-form" class="form-grid" action="#" method="POST" novalidate>
+          <form id="contact-form" class="form-grid" action="https://formsubmit.co/karthikeyanp@valarotech.com" method="POST" novalidate>
+            <input type="hidden" name="_subject" value="New enquiry from valarotech.com">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_next" value="https://valarotech.com/contact.html?sent=1">
             <div class="field">
               <label for="name">Full name <span class="req">*</span></label>
               <input type="text" id="name" name="name" autocomplete="name" required>
@@ -101,8 +100,8 @@
               <textarea id="message" name="message" required minlength="10" placeholder="A few lines about your current setup, goals and timeline"></textarea>
               <p class="error">Please write a short message (at least 10 characters).</p>
             </div>
-            <!-- Honeypot field for spam bots (Formspree ignores submissions where it is filled) -->
-            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
+            <!-- Honeypot field for spam bots (FormSubmit discards submissions where it is filled) -->
+            <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
             <div class="full">
               <button type="submit" class="btn btn-primary">Send message
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>

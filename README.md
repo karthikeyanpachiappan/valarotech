@@ -40,38 +40,18 @@ Search the HTML for `PLACEHOLDER` to find each spot.
 | Home page stats | `index.html`, "Why Valarotech" section | `50+` pipelines, `10x` faster releases, `40%` cost savings, `24/7` support. **Replace with real figures or remove them.** |
 | Company story | `about.html`, "Our story" section | Generic founding story. Adjust to Valarotech's real history (founding year, founders, location). |
 | Testimonials | `index.html`, "Our promise" section | Shows commitment cards for now. A testimonial card template is commented out in the HTML for when you have real client quotes. |
-| Contact form endpoint | `contact.html`, `<form action="#">` | Not connected. See below. |
 | Team names | Not on the site yet | Add a team section to `about.html` if you want one. |
 | Logo | Header/footer (`.logo-mark` "V") and `assets/img/favicon.svg` | Simple gradient "V" mark. Swap for your real logo. |
 
-## Wiring up the contact form
+## Contact form
 
-GitHub Pages only serves static files, so the form needs an external service to deliver messages. Until it is connected, submitting shows a "not connected yet" message and nothing is sent.
+The form on `contact.html` is delivered by [FormSubmit](https://formsubmit.co) (free, no account) to **karthikeyanp@valarotech.com**.
 
-**Formspree (simplest):**
-
-1. Sign up at <https://formspree.io> and create a form. Copy its endpoint, for example `https://formspree.io/f/abcdwxyz`.
-2. In `contact.html`, change `action="#"` to that endpoint (keep `method="POST"`).
-3. Commit and push. The JavaScript only intercepts the submission while the action is `#`, so the browser will post to Formspree normally and validation still runs first.
-
-The hidden `_gotcha` field is a Formspree honeypot for spam bots. Alternatives that work the same way: Web3Forms, Getform, Basin, or a Netlify / Cloudflare serverless function.
-
-If you'd rather stay on the page and show an inline success message, replace the placeholder block in `assets/js/main.js` (marked `TODO`) with something like:
-
-```js
-e.preventDefault();
-fetch(form.action, { method: "POST", body: new FormData(form), headers: { Accept: "application/json" } })
-  .then(function (r) {
-    if (!r.ok) throw new Error();
-    status.className = "form-status success";
-    status.textContent = "Thanks! We'll be in touch within one business day.";
-    form.reset();
-  })
-  .catch(function () {
-    status.className = "form-status error";
-    status.textContent = "Sorry, something went wrong. Please email us directly.";
-  });
-```
+- **One-time activation:** the very first submission triggers an email from FormSubmit to karthikeyanp@valarotech.com titled "Action Required: Activate FormSubmit". Click **Activate Form** in it. Until then, submissions are not delivered.
+- After activating, FormSubmit's email also offers a random alias string. You can replace the email in the form's `action` URL with that alias (`https://formsubmit.co/<alias>`) to hide the address from bots.
+- To change the recipient, edit the email in the form's `action` URL in `contact.html`.
+- `assets/js/main.js` validates the fields, then posts to FormSubmit's AJAX endpoint and shows the success or error message inline. Without JavaScript the browser posts directly and is redirected back to `contact.html?sent=1`.
+- Hidden fields: `_subject` (email subject), `_template=table` (nicer email layout), `_next` (redirect for non-JS), `_honey` (spam honeypot).
 
 ## Previewing locally (optional)
 
