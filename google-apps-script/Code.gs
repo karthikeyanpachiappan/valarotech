@@ -10,10 +10,11 @@ var SHEET_NAME = "Enquiries";
 var COLUMNS = ["Timestamp", "Name", "Email", "Phone", "Company", "Service", "Message", "Auto-reply"];
 
 // Auto-reply settings. The reply is sent from REPLY_FROM when that address is set
-// up in Gmail as a "Send mail as" alias; otherwise from this Google account, with
-// the display name and Reply-To below so answers still reach REPLY_FROM.
+// up in Gmail as a "Send mail as" alias, else from FALLBACK_FROM if that one is,
+// else from this Google account. Reply-To is always REPLY_FROM.
 var AUTO_REPLY = true;
-var REPLY_FROM = "karthikeyanp@valarotech.com";
+var REPLY_FROM = "hello@valarotech.com";
+var FALLBACK_FROM = "karthikeyanp@valarotech.com";
 var REPLY_NAME = "Valarotech";
 var REPLY_PHONE = "+91 79049 31067";
 var WEBSITE = "https://valarotech.com";
@@ -86,12 +87,14 @@ function sendAutoReply(p) {
     "</div>";
 
   var options = { name: REPLY_NAME, replyTo: REPLY_FROM, htmlBody: html };
-  var viaAlias = GmailApp.getAliases().indexOf(REPLY_FROM) !== -1;
-  if (viaAlias) options.from = REPLY_FROM;
+  var aliases = GmailApp.getAliases();
+  var fromAddr = aliases.indexOf(REPLY_FROM) !== -1 ? REPLY_FROM
+    : aliases.indexOf(FALLBACK_FROM) !== -1 ? FALLBACK_FROM : null;
+  if (fromAddr) options.from = fromAddr;
 
   try {
     GmailApp.sendEmail(to, subject, text, options);
-    return viaAlias ? "sent from " + REPLY_FROM : "sent (reply-to " + REPLY_FROM + ")";
+    return fromAddr ? "sent from " + fromAddr : "sent (reply-to " + REPLY_FROM + ")";
   } catch (err) {
     return "failed: " + err.message;
   }

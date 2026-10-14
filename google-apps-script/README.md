@@ -42,6 +42,6 @@ To make the email come **from** karthikeyanp@valarotech.com, add it as a Gmail a
 3. SMTP server `smtp.hostinger.com`, port `587`, username `karthikeyanp@valarotech.com`, your Hostinger email password, **Secured connection using TLS** (port 465 needs SSL instead).
 4. Enter the confirmation code Gmail sends to karthikeyanp@valarotech.com.
 
-The script detects the alias automatically; no code change is needed. The sheet's Auto-reply column then shows "sent from karthikeyanp@valarotech.com".
+The script sends from hello@valarotech.com when that address is a Gmail "Send mail as" alias, otherwise from karthikeyanp@valarotech.com if that one is, otherwise from the Google account. Add hello@ the same way (same SMTP settings, username karthikeyanp@valarotech.com). The sheet's Auto-reply column shows which address was used.
 
 Consumer Gmail accounts can send about 100 automatic emails per day, which is plenty for enquiries.
