@@ -158,14 +158,29 @@
       status.className = "form-status";
       status.textContent = "";
 
-      fetch(ajaxUrl, {
+      // Send the readable service name rather than its short id
+      var data = new FormData(form);
+      if (select && select.selectedIndex > 0) data.set("service", select.options[select.selectedIndex].text);
+
+      // Save a copy to Google Sheets (Apps Script web app). It does not return
+      // CORS headers, so the request is fire-and-forget ("no-cors").
+      var sheetUrl = form.getAttribute("data-sheet-url");
+      var sheetSave = sheetUrl
+        ? fetch(sheetUrl, { method: "POST", mode: "no-cors", body: data }).then(function () { return true; }, function () { return false; })
+        : Promise.resolve(false);
+
+      var emailSend = fetch(ajaxUrl, {
         method: "POST",
         headers: { Accept: "application/json" },
-        body: new FormData(form)
+        body: data
       })
-        .then(function (r) { return r.json().then(function (data) { return { ok: r.ok, data: data }; }); })
-        .then(function (res) {
-          if (!res.ok || String(res.data.success) === "false") throw new Error(res.data.message);
+        .then(function (r) { return r.json().then(function (d) { return r.ok && String(d.success) !== "false"; }); })
+        .catch(function () { return false; });
+
+      Promise.all([emailSend, sheetSave])
+        .then(function (results) {
+          // Succeed if the enquiry reached at least one destination
+          if (!results[0] && !results[1]) throw new Error("not sent");
           status.className = "form-status success";
           status.textContent = "Thanks! Your message has been sent. We'll reply within one business day.";
           form.reset();

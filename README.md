@@ -11,7 +11,8 @@ It is a static site: plain HTML, CSS and vanilla JavaScript, with **no build ste
 ├── index.html          Home: hero, services overview, why us, process, tech stack, CTA
 ├── about.html          Company story, mission & vision, values, approach
 ├── services.html       Detailed sections for every service (with in-page nav)
-├── contact.html        Contact form (front-end only) + contact details
+├── contact.html        Contact form (email via FormSubmit + Google Sheets) + contact details
+├── google-apps-script/ Apps Script that saves enquiries to a Google Sheet
 ├── assets/
 │   ├── css/style.css   All styles (mobile-first, CSS variables at the top for colours/fonts)
 │   ├── js/main.js      Mobile menu, scroll effects, counters, contact form validation
@@ -51,6 +52,8 @@ The form on `contact.html` is delivered by [FormSubmit](https://formsubmit.co) (
 - After activating, FormSubmit's email also offers a random alias string. You can replace the email in the form's `action` URL with that alias (`https://formsubmit.co/<alias>`) to hide the address from bots.
 - To change the recipient, edit the email in the form's `action` URL in `contact.html`.
 - `assets/js/main.js` validates the fields, then posts to FormSubmit's AJAX endpoint and shows the success or error message inline. Without JavaScript the browser posts directly and is redirected back to `contact.html?sent=1`.
+- **Google Sheets copy:** each enquiry is also appended to a Google Sheet through a small Apps Script web app. Setup steps and the script are in [`google-apps-script/`](google-apps-script/README.md); paste the web app URL into the form's `data-sheet-url` attribute in `contact.html`. While it is empty, the sheet step is skipped.
+- Fields collected: name, email, contact number, company, service, message.
 - Hidden fields: `_subject` (email subject), `_template=table` (nicer email layout), `_next` (redirect for non-JS), `_honey` (spam honeypot).
 
 ## Previewing locally (optional)
