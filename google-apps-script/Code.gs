@@ -42,7 +42,13 @@ function doPost(e) {
     lock.releaseLock();
 
     // The row is saved first, so a mail problem never loses an enquiry.
-    sheet.getRange(row, COLUMNS.length).setValue(sendAutoReply(p));
+    var replyStatus;
+    try {
+      replyStatus = sendAutoReply(p);
+    } catch (err) {
+      replyStatus = "failed: " + err.message;
+    }
+    sheet.getRange(row, COLUMNS.length).setValue(replyStatus);
     return respond({ result: "success" });
   } finally {
     lock.releaseLock();
@@ -95,6 +101,19 @@ function esc(value) {
   return String(value || "").replace(/[&<>"']/g, function (c) {
     return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
   });
+}
+
+// Run this once from the Apps Script editor: it asks for the Gmail permission
+// and sends a sample auto-reply to REPLY_FROM. Check the Execution log for the result.
+function testAutoReply() {
+  var status = sendAutoReply({
+    name: "Karthikeyan Test",
+    email: REPLY_FROM,
+    service: "DevOps services",
+    message: "This is a test of the Valarotech auto-reply."
+  });
+  Logger.log("Auto-reply test: " + status);
+  Logger.log("Gmail aliases: " + GmailApp.getAliases().join(", "));
 }
 
 // Lets you open the web app URL in a browser to check it is deployed.
