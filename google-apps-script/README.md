@@ -21,3 +21,27 @@ To check the deployment, open the Web app URL in a browser: it should say "Valar
 ## Changing the script later
 
 After editing `Code.gs` in Apps Script, use **Deploy → Manage deployments → Edit (pencil) → Version: New version → Deploy**. This keeps the same URL, so the website does not need changing.
+
+## Automatic reply to the enquirer
+
+After saving the row, the script emails the visitor a short thank-you ("We have received your enquiry and will get back to you within one business day"), signed by Karthikeyan P with the Valarotech email, phone and website. The **Auto-reply** column in the sheet records whether it was sent. Settings (`AUTO_REPLY`, `REPLY_FROM`, `REPLY_NAME`, `REPLY_PHONE`) are at the top of `Code.gs`.
+
+Sending email needs Gmail permission, so after pasting a new version of `Code.gs`:
+
+1. In Apps Script, select the function **`doGet`** and click **Run**, then approve the new Gmail permission (use the same incognito window / Google account as before).
+2. **Deploy → Manage deployments → pencil (Edit) → Version: New version → Deploy.** The URL stays the same.
+
+### Sending as karthikeyanp@valarotech.com
+
+Without extra setup, the reply is sent from the Google account that owns the script, shown as **"Valarotech"**, with Reply-To set to karthikeyanp@valarotech.com, so the enquirer's answers land in that inbox.
+
+To make the email come **from** karthikeyanp@valarotech.com, add it as a Gmail alias on the Google account that owns the script:
+
+1. Gmail → **Settings (gear) → See all settings → Accounts and Import → Send mail as → Add another email address**.
+2. Name `Valarotech`, email `karthikeyanp@valarotech.com`, click **Next Step**.
+3. SMTP server `smtp.hostinger.com`, port `465`, username `karthikeyanp@valarotech.com`, your Hostinger email password, **Secured connection using SSL**.
+4. Enter the confirmation code Gmail sends to karthikeyanp@valarotech.com.
+
+The script detects the alias automatically; no code change is needed. The sheet's Auto-reply column then shows "sent from karthikeyanp@valarotech.com".
+
+Consumer Gmail accounts can send about 100 automatic emails per day, which is plenty for enquiries.
