@@ -1097,3 +1097,35 @@ h1, h2, h3, h4, .logo, .stat strong, .step-num { font-family: "Sora", var(--font
 .icon-box.teal { background: rgba(255, 179, 71, 0.16); color: #c2410c; }
 .check-list .tick:not(.warn) { background: rgba(255, 106, 43, 0.12); color: #c2410c; }
 .section-dark .check-list .tick:not(.warn) { color: #ffb347; }
+
+/* ---------- Version C: calmer, more hand-made feel ---------- */
+/* solid highlight instead of gradient text */
+.highlight { color: #e8590c; }
+.gradient-text { background: none !important; -webkit-background-clip: initial !important; background-clip: initial !important; color: #e8590c !important; }
+.section-dark .gradient-text, .page-hero .gradient-text { color: #ffb347 !important; }
+
+/* no glowing blobs or grid texture */
+.hero::before, .hero::after, .page-hero::before, .story-visual::before { display: none; }
+.hero-grid-bg { display: none; }
+.hero { background: #f7f6f2; border-bottom: 1px solid #e7e3da; }
+.page-hero { background: #0b1530; }
+
+/* solid surfaces instead of gradients */
+.stat-panel { background: #0b1530; padding: 0; border-top: 4px solid #ff6a2b; border-radius: var(--radius-lg); }
+.stat-panel-inner { border-radius: 0 0 var(--radius-lg) var(--radius-lg); }
+.cta-banner { background: #0b1530; }
+.cta-banner::after { display: none; }
+.panel { background: #13214a; box-shadow: none; }
+.step-num { background: #ff6a2b; color: #0b1530; }
+.logo-mark, img.logo-mark { border-radius: 8px; }
+
+/* quieter shadows and hover */
+.card:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(15, 27, 45, 0.08); border-color: #d6dbe5; }
+.btn-primary { box-shadow: none; }
+.btn-primary:hover { transform: none; }
+.illustration { box-shadow: 0 12px 30px rgba(15, 27, 45, 0.12); }
+
+/* simple underline for the active menu item */
+@media (min-width: 900px) {
+  .site-nav a[aria-current="page"]::after { height: 2px; background: #ff6a2b; }
+}
