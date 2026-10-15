@@ -2,9 +2,9 @@
   <title>Valarotech</title>
   <defs>
     <linearGradient id="vt-bg" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="64" y2="64">
-      <stop offset="0" stop-color="#10b981"/>
-      <stop offset="0.55" stop-color="#14b8a6"/>
-      <stop offset="1" stop-color="#5eead4"/>
+      <stop offset="0" stop-color="#ff6a2b"/>
+      <stop offset="0.55" stop-color="#f59e0b"/>
+      <stop offset="1" stop-color="#ffb347"/>
     </linearGradient>
   </defs>
   <rect width="64" height="64" rx="16" fill="url(#vt-bg)"/>

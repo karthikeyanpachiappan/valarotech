@@ -2,9 +2,9 @@
   <title>Valarotech</title>
   <defs>
     <linearGradient id="vt-bg" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="64" y2="64">
-      <stop offset="0" stop-color="#10b981"/>
-      <stop offset="0.55" stop-color="#14b8a6"/>
-      <stop offset="1" stop-color="#5eead4"/>
+      <stop offset="0" stop-color="#ff6a2b"/>
+      <stop offset="0.55" stop-color="#f59e0b"/>
+      <stop offset="1" stop-color="#ffb347"/>
     </linearGradient>
     <style>@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@800&amp;display=swap");</style>
   </defs>
@@ -15,5 +15,5 @@
   </g>
   <path d="M38.6 27.2 C43 20.2 49.2 18 55 19.4 C52 25.4 45.4 28.6 38.6 27.2 Z" fill="#fff"/>
   <path d="M43.6 25 L52 21.2" stroke="url(#vt-bg)" stroke-width="1.4" stroke-linecap="round"/>
-  <text x="80" y="44.5" font-family="'Plus Jakarta Sans', 'Segoe UI', Arial, sans-serif" font-weight="800" font-size="34" letter-spacing="-0.7" fill="#ffffff">Valaro<tspan fill="#34d399">tech</tspan></text>
+  <text x="80" y="44.5" font-family="'Plus Jakarta Sans', 'Segoe UI', Arial, sans-serif" font-weight="800" font-size="34" letter-spacing="-0.7" fill="#ffffff">Valaro<tspan fill="#ff8c4a">tech</tspan></text>
 </svg>

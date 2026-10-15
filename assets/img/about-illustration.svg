@@ -3,25 +3,25 @@
   <desc id="d">A delivery path rises from a first commit through Discover, Plan, Build, Automate and Support, ending in a growing leaf, with a team collaborating at the start.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0a3337"/>
-      <stop offset="1" stop-color="#062a2e"/>
+      <stop offset="0" stop-color="#0f1c3f"/>
+      <stop offset="1" stop-color="#0b1530"/>
     </linearGradient>
     <linearGradient id="brand" x1="0" y1="1" x2="1" y2="0">
-      <stop offset="0" stop-color="#10b981"/>
-      <stop offset=".55" stop-color="#14b8a6"/>
-      <stop offset="1" stop-color="#5eead4"/>
+      <stop offset="0" stop-color="#ff6a2b"/>
+      <stop offset=".55" stop-color="#f59e0b"/>
+      <stop offset="1" stop-color="#ffb347"/>
     </linearGradient>
     <linearGradient id="leaf" x1="0" y1="1" x2="1" y2="0">
-      <stop offset="0" stop-color="#5eead4"/>
-      <stop offset="1" stop-color="#7cf2d8"/>
+      <stop offset="0" stop-color="#ffb347"/>
+      <stop offset="1" stop-color="#ffd29a"/>
     </linearGradient>
     <radialGradient id="glow" cx=".5" cy=".5" r=".5">
-      <stop offset="0" stop-color="#14b8a6" stop-opacity=".45"/>
-      <stop offset="1" stop-color="#14b8a6" stop-opacity="0"/>
+      <stop offset="0" stop-color="#f59e0b" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#f59e0b" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="glow2" cx=".5" cy=".5" r=".5">
-      <stop offset="0" stop-color="#5eead4" stop-opacity=".4"/>
-      <stop offset="1" stop-color="#5eead4" stop-opacity="0"/>
+      <stop offset="0" stop-color="#ffb347" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#ffb347" stop-opacity="0"/>
     </radialGradient>
     <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
       <path d="M32 0H0V32" fill="none" stroke="#ffffff" stroke-opacity=".05"/>
@@ -49,30 +49,30 @@
         fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="2" stroke-dasharray="2 10" stroke-linecap="round"/>
 
   <!-- commit node -->
-  <circle cx="96" cy="600" r="16" fill="#062a2e" stroke="#fff" stroke-width="6"/>
+  <circle cx="96" cy="600" r="16" fill="#0b1530" stroke="#fff" stroke-width="6"/>
 
   <!-- stage nodes -->
-  <g font-family="'Plus Jakarta Sans', 'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" fill="#dcebe8">
-    <g><circle cx="228" cy="500" r="13" fill="#10b981" stroke="#062a2e" stroke-width="4"/><text x="246" y="530">Discover</text></g>
-    <g><circle cx="308" cy="420" r="13" fill="#22c55e" stroke="#062a2e" stroke-width="4"/><text x="326" y="450">Plan</text></g>
-    <g><circle cx="388" cy="330" r="13" fill="#14b8a6" stroke="#062a2e" stroke-width="4"/><text x="406" y="360">Build</text></g>
-    <g><circle cx="468" cy="250" r="13" fill="#2dd4bf" stroke="#062a2e" stroke-width="4"/><text x="486" y="280">Automate</text></g>
+  <g font-family="'Plus Jakarta Sans', 'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" fill="#dbe3f0">
+    <g><circle cx="228" cy="500" r="13" fill="#ff6a2b" stroke="#0b1530" stroke-width="4"/><text x="246" y="530">Discover</text></g>
+    <g><circle cx="308" cy="420" r="13" fill="#fb923c" stroke="#0b1530" stroke-width="4"/><text x="326" y="450">Plan</text></g>
+    <g><circle cx="388" cy="330" r="13" fill="#f59e0b" stroke="#0b1530" stroke-width="4"/><text x="406" y="360">Build</text></g>
+    <g><circle cx="468" cy="250" r="13" fill="#fbbf24" stroke="#0b1530" stroke-width="4"/><text x="486" y="280">Automate</text></g>
   </g>
 
   <!-- growth leaf at the top -->
   <g transform="translate(500 190)">
     <path d="M0 0 C 6 -46, 44 -78, 98 -82 C 96 -30, 58 6, 0 0 Z" fill="url(#leaf)"/>
-    <path d="M8 -8 C 34 -30, 58 -50, 84 -70" fill="none" stroke="#062a2e" stroke-opacity=".5" stroke-width="3" stroke-linecap="round"/>
+    <path d="M8 -8 C 34 -30, 58 -50, 84 -70" fill="none" stroke="#0b1530" stroke-opacity=".5" stroke-width="3" stroke-linecap="round"/>
     <path d="M-2 -2 C -40 -18, -58 -52, -56 -86 C -20 -76, 2 -46, -2 -2 Z" fill="url(#leaf)" opacity=".75"/>
-    <circle r="12" fill="#5eead4" stroke="#062a2e" stroke-width="4"/>
-    <text x="-24" y="5" text-anchor="end" font-family="'Plus Jakarta Sans', 'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" fill="#7cf2d8">Support &amp; grow</text>
+    <circle r="12" fill="#ffb347" stroke="#0b1530" stroke-width="4"/>
+    <text x="-24" y="5" text-anchor="end" font-family="'Plus Jakarta Sans', 'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" fill="#ffd29a">Support &amp; grow</text>
   </g>
 
   <!-- team collaborating at the start -->
-  <g transform="translate(90 450)" fill="#c5d9d6">
+  <g transform="translate(90 450)" fill="#c3cde0">
     <circle cx="0" cy="0" r="14"/><path d="M-22 44 c0-20 10-30 22-30 s22 10 22 30 z"/>
-    <circle cx="44" cy="-8" r="12" fill="#8aa9a4"/><path d="M26 30 c0-16 8-25 18-25 s18 9 18 25 z" fill="#8aa9a4"/>
-    <circle cx="-42" cy="-8" r="12" fill="#8aa9a4"/><path d="M-60 30 c0-16 8-25 18-25 s18 9 18 25 z" fill="#8aa9a4"/>
+    <circle cx="44" cy="-8" r="12" fill="#8fa0bb"/><path d="M26 30 c0-16 8-25 18-25 s18 9 18 25 z" fill="#8fa0bb"/>
+    <circle cx="-42" cy="-8" r="12" fill="#8fa0bb"/><path d="M-60 30 c0-16 8-25 18-25 s18 9 18 25 z" fill="#8fa0bb"/>
   </g>
 
   <!-- caption chip -->

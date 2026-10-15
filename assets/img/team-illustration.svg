@@ -2,9 +2,9 @@
   <title id="t">Working as one team</title>
   <desc id="d">Your engineers and Valarotech engineers on either side of a shared delivery board, connected by a handshake, with documentation and runbooks handed over.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0a3337"/><stop offset="1" stop-color="#062a2e"/></linearGradient>
-    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#059669"/><stop offset=".5" stop-color="#10b981"/><stop offset="1" stop-color="#5eead4"/></linearGradient>
-    <radialGradient id="glow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#10b981" stop-opacity=".4"/><stop offset="1" stop-color="#10b981" stop-opacity="0"/></radialGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f1c3f"/><stop offset="1" stop-color="#0b1530"/></linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e8590c"/><stop offset=".5" stop-color="#ff6a2b"/><stop offset="1" stop-color="#ffb347"/></linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#ff6a2b" stop-opacity=".4"/><stop offset="1" stop-color="#ff6a2b" stop-opacity="0"/></radialGradient>
     <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#fff" stroke-opacity=".05"/></pattern>
     <g id="person"><circle cx="0" cy="0" r="15"/><path d="M-26 48 c0-22 11-33 26-33 s26 11 26 33 z"/></g>
   </defs>
@@ -14,44 +14,44 @@
 
   <!-- shared board -->
   <g transform="translate(190 120)">
-    <rect width="260" height="190" rx="18" fill="#0d3b40" stroke="url(#brand)" stroke-width="2"/>
-    <rect x="0" y="0" width="260" height="34" rx="18" fill="#0f4a4f"/>
-    <rect x="0" y="18" width="260" height="16" fill="#0f4a4f"/>
-    <g fill="#ff6b6b"><circle cx="20" cy="17" r="5"/></g><circle cx="36" cy="17" r="5" fill="#fbbf24"/><circle cx="52" cy="17" r="5" fill="#34d399"/>
-    <g font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11" font-weight="800" fill="#8aa9a4" letter-spacing="1">
+    <rect width="260" height="190" rx="18" fill="#13214a" stroke="url(#brand)" stroke-width="2"/>
+    <rect x="0" y="0" width="260" height="34" rx="18" fill="#18295a"/>
+    <rect x="0" y="18" width="260" height="16" fill="#18295a"/>
+    <g fill="#ff6b6b"><circle cx="20" cy="17" r="5"/></g><circle cx="36" cy="17" r="5" fill="#fbbf24"/><circle cx="52" cy="17" r="5" fill="#ff8c4a"/>
+    <g font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11" font-weight="800" fill="#8fa0bb" letter-spacing="1">
       <text x="18" y="56">TO DO</text><text x="104" y="56">DOING</text><text x="186" y="56">DONE</text>
     </g>
     <g>
-      <rect x="14" y="66" width="70" height="26" rx="6" fill="#145055"/><rect x="14" y="98" width="70" height="26" rx="6" fill="#145055"/>
-      <rect x="98" y="66" width="70" height="26" rx="6" fill="#10b981" fill-opacity=".55"/>
-      <rect x="182" y="66" width="64" height="26" rx="6" fill="#10b981"/><rect x="182" y="98" width="64" height="26" rx="6" fill="#10b981"/><rect x="182" y="130" width="64" height="26" rx="6" fill="#10b981"/>
-      <path d="M200 79 l5 5 l9-10 M200 111 l5 5 l9-10 M200 143 l5 5 l9-10" fill="none" stroke="#04221f" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="14" y="66" width="70" height="26" rx="6" fill="#1d3166"/><rect x="14" y="98" width="70" height="26" rx="6" fill="#1d3166"/>
+      <rect x="98" y="66" width="70" height="26" rx="6" fill="#ff6a2b" fill-opacity=".55"/>
+      <rect x="182" y="66" width="64" height="26" rx="6" fill="#ff6a2b"/><rect x="182" y="98" width="64" height="26" rx="6" fill="#ff6a2b"/><rect x="182" y="130" width="64" height="26" rx="6" fill="#ff6a2b"/>
+      <path d="M200 79 l5 5 l9-10 M200 111 l5 5 l9-10 M200 143 l5 5 l9-10" fill="none" stroke="#0b1530" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
     </g>
   </g>
 
   <!-- your team (left) -->
-  <g fill="#9fbab5">
+  <g fill="#9aa8bf">
     <use href="#person" transform="translate(92 200)"/>
-    <use href="#person" transform="translate(132 240) scale(.85)" fill="#8aa9a4"/>
+    <use href="#person" transform="translate(132 240) scale(.85)" fill="#8fa0bb"/>
   </g>
-  <text x="62" y="320" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="700" fill="#dcebe8">Your team</text>
+  <text x="62" y="320" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="700" fill="#dbe3f0">Your team</text>
 
   <!-- valarotech (right) -->
-  <g fill="#5eead4">
+  <g fill="#ffb347">
     <use href="#person" transform="translate(548 200)"/>
-    <use href="#person" transform="translate(508 240) scale(.85)" fill="#34d399"/>
+    <use href="#person" transform="translate(508 240) scale(.85)" fill="#ff8c4a"/>
   </g>
-  <text x="498" y="320" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="700" fill="#dcebe8">Valarotech</text>
+  <text x="498" y="320" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="700" fill="#dbe3f0">Valarotech</text>
 
   <!-- connectors -->
-  <g fill="none" stroke="#5eead4" stroke-opacity=".6" stroke-width="2.5" stroke-dasharray="5 7">
+  <g fill="none" stroke="#ffb347" stroke-opacity=".6" stroke-width="2.5" stroke-dasharray="5 7">
     <path d="M150 215 C 170 210, 175 200, 190 200"/><path d="M490 215 C 470 210, 465 200, 450 200"/>
   </g>
 
   <!-- "working together" link badge -->
   <g transform="translate(320 86)">
-    <circle r="30" fill="#10b981"/>
-    <g fill="none" stroke="#04221f" stroke-width="3.4" stroke-linecap="round" transform="rotate(-45)">
+    <circle r="30" fill="#ff6a2b"/>
+    <g fill="none" stroke="#0b1530" stroke-width="3.4" stroke-linecap="round" transform="rotate(-45)">
       <rect x="-19" y="-7" width="22" height="14" rx="7"/>
       <rect x="-3" y="-7" width="22" height="14" rx="7"/>
     </g>
@@ -59,13 +59,13 @@
 
   <!-- handover docs -->
   <g transform="translate(200 360)">
-    <rect width="240" height="96" rx="16" fill="#0d3b40" stroke="#ffffff" stroke-opacity=".12"/>
-    <g transform="translate(22 22)" fill="none" stroke="#5eead4" stroke-width="2.6" stroke-linejoin="round">
+    <rect width="240" height="96" rx="16" fill="#13214a" stroke="#ffffff" stroke-opacity=".12"/>
+    <g transform="translate(22 22)" fill="none" stroke="#ffb347" stroke-width="2.6" stroke-linejoin="round">
       <path d="M0 0 h30 l12 12 v40 h-42 z"/><path d="M30 0 v12 h12"/><path d="M9 24 h22 M9 33 h22 M9 42 h14" stroke-linecap="round"/>
     </g>
     <g font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif">
       <text x="82" y="44" font-size="15" font-weight="800" fill="#fff">Docs &amp; runbooks</text>
-      <text x="82" y="66" font-size="13" font-weight="600" fill="#9fbab5">Handed over. You own it.</text>
+      <text x="82" y="66" font-size="13" font-weight="600" fill="#9aa8bf">Handed over. You own it.</text>
     </g>
   </g>
 </svg>
