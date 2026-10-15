@@ -1093,3 +1093,4 @@ h1, h2, h3, h4, .logo, .stat strong, .step-num { font-family: "Sora", var(--font
 .hero-badges svg { color: #c2410c; }
 .pipeline-card { background: #0b1530; border-color: #0b1530; box-shadow: 0 30px 70px rgba(11, 21, 48, 0.25); }
 .site-header { border-bottom-color: #e3e8f0; }
+.panel { background: linear-gradient(135deg, #1d3166 0%, #13214a 100%); border: 1px solid rgba(255, 140, 74, 0.28); }
