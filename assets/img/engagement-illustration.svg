@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 340" role="img" aria-labelledby="t d">
+  <title id="t">Three ways to work with Valarotech</title>
+  <desc id="d">A single starting point, your free assessment, branching into three paths: consulting, implementation and managed support.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0a3337"/><stop offset="1" stop-color="#062a2e"/></linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#059669"/><stop offset=".5" stop-color="#10b981"/><stop offset="1" stop-color="#5eead4"/></linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#10b981" stop-opacity=".35"/><stop offset="1" stop-color="#10b981" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#fff" stroke-opacity=".05"/></pattern>
+  </defs>
+  <rect width="1100" height="340" rx="28" fill="url(#bg)"/>
+  <rect width="1100" height="340" rx="28" fill="url(#grid)"/>
+  <circle cx="180" cy="170" r="200" fill="url(#glow)"/>
+  <circle cx="900" cy="170" r="260" fill="url(#glow)"/>
+
+  <!-- branches -->
+  <g fill="none" stroke="url(#brand)" stroke-width="5" stroke-linecap="round">
+    <path d="M250 170 C 420 170, 420 70, 600 70 H 660"/>
+    <path d="M250 170 H 660"/>
+    <path d="M250 170 C 420 170, 420 270, 600 270 H 660"/>
+  </g>
+
+  <!-- start node: free assessment -->
+  <g transform="translate(160 170)">
+    <circle r="62" fill="#0d3b40" stroke="url(#brand)" stroke-width="3"/>
+    <g fill="none" stroke="#5eead4" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="-6" cy="-12" r="14"/><path d="M4 -2 l12 12"/></g>
+    <text x="0" y="30" text-anchor="middle" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="800" fill="#fff">Free</text>
+    <text x="0" y="46" text-anchor="middle" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="800" fill="#fff">assessment</text>
+  </g>
+
+  <g font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif">
+    <!-- consulting -->
+    <g transform="translate(660 30)">
+      <rect width="360" height="80" rx="18" fill="#0d3b40" stroke="#ffffff" stroke-opacity=".12"/>
+      <circle cx="44" cy="40" r="24" fill="#10b981"/>
+      <g fill="none" stroke="#04221f" stroke-width="3" stroke-linejoin="round"><circle cx="44" cy="40" r="13"/><path d="M50 34 l-4 9 l-9 4 l4 -9 z" fill="#04221f"/></g>
+      <text x="84" y="36" font-size="18" font-weight="800" fill="#fff">Consulting</text>
+      <text x="84" y="58" font-size="13" font-weight="600" fill="#9fbab5">Assess, plan, and guide your team</text>
+    </g>
+    <!-- implementation -->
+    <g transform="translate(660 130)">
+      <rect width="360" height="80" rx="18" fill="#0d3b40" stroke="#ffffff" stroke-opacity=".12"/>
+      <circle cx="44" cy="40" r="24" fill="#34d399"/>
+      <path d="M37 33 a8 8 0 0 0 10 10 l9 9 a3 3 0 0 0 4 -4 l-9 -9 a8 8 0 0 0 -10 -10 l5 5 -4 4 z" fill="none" stroke="#04221f" stroke-width="2.8" stroke-linejoin="round"/>
+      <text x="84" y="36" font-size="18" font-weight="800" fill="#fff">Implementation</text>
+      <text x="84" y="58" font-size="13" font-weight="600" fill="#9fbab5">We build it alongside your engineers</text>
+    </g>
+    <!-- managed -->
+    <g transform="translate(660 230)">
+      <rect width="360" height="80" rx="18" fill="#0d3b40" stroke="#ffffff" stroke-opacity=".12"/>
+      <circle cx="44" cy="40" r="24" fill="#5eead4"/>
+      <path d="M28 40 h7 l4 -9 l6 18 l4 -9 h11" fill="none" stroke="#04221f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="84" y="36" font-size="18" font-weight="800" fill="#fff">Managed support</text>
+      <text x="84" y="58" font-size="13" font-weight="600" fill="#9fbab5">We run and improve it after go-live</text>
+    </g>
+  </g>
+</svg>
